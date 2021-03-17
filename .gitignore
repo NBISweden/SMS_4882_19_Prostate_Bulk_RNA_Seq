@@ -17,18 +17,18 @@ reports/knitr-pdf/*
 **/scratch/*
 
 # Exceptions
-!*/README.md
-!*/*/README.md
+#!*/README.md
+#!*/*/README.md
 
-!data/test_data/
-!data/data_management/
+#!data/test_data/
+#!data/data_management/
 
-!doc/
+#!doc/
 
-!reports/myunsrt.bst
-!reports/references.bib
-!reports/*/
-!reports/*/*.Rnw
-!reports/*/*.pdf
+#!reports/myunsrt.bst
+#!reports/references.bib
+#!reports/*/
+#!reports/*/*.Rnw
+#!reports/*/*.pdf
 
-!scratch/README.md
+#!scratch/README.md
