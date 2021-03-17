@@ -3,7 +3,7 @@
 #0. Resources			                                  #
 ###################################################################
 #ANNOTATIONS=($PROJECT_DIR'data/meta/annotation/Human_annotation.bed' $PROJECT_DIR'data/meta/annotation/Mouse_annotation.bed')
-PROJECT_DIR='/crex/proj/snic2020-16-70/nobackup/private/tmp_4882/'
+PROJECT_DIR='/crex/proj/snic2019-30-25/private/UserDirectories/SMS_4882_19_Prostate_Bulk_RNA_Seq/'
 CODE=$PROJECT_DIR'code/GSNAP_Human/'
 SAMPLES=$CODE'Samples_read.txt'
 INTERMEDIATE_DIR=$PROJECT_DIR'intermediate/'
@@ -126,10 +126,10 @@ do
 #SBATCH -J ${sample}_FC_GSNAP_H
 
 cd \$SNIC_TMP
-cp /crex/proj/snic2020-16-70/nobackup/private/tmp_4882/intermediate/XenofilteR_GSNAP/${sample}/Filtered_bams_Human/${sample}_Filtered.bam \$SNIC_TMP
-featureCounts_path='/crex/proj/snic2020-16-70/nobackup/private/tmp_4882/intermediate/featurecounts/XenofilteR/GSNAP_Human/$sample'
+cp /crex/proj/snic2019-30-25/private/UserDirectories/SMS_4882_19_Prostate_Bulk_RNA_Seq/intermediate/XenofilteR_GSNAP/${sample}/Filtered_bams_Human/${sample}_Filtered.bam \$SNIC_TMP
+featureCounts_path='/crex/proj/snic2019-30-25/private/UserDirectories/SMS_4882_19_Prostate_Bulk_RNA_Seq/intermediate/featurecounts/XenofilteR/GSNAP_Human/$sample'
 output='count-s-2'
-annotation='/crex/proj/snic2020-16-70/nobackup/private/tmp_4882/data/meta/annotation/Human_annotation.gff3'
+annotation='/crex/proj/snic2019-30-25/private/UserDirectories/SMS_4882_19_Prostate_Bulk_RNA_Seq/data/meta/annotation/Human_annotation.gff3'
 mkdir -p \$featureCounts_path
 ~/glob/Software/subread-2.0.0-source/bin/featureCounts -s 2 -t exon -g gene_id -F GTF -C -T $THREADS -p -B --primary -Q 20 -o \$output -a \$annotation ${sample}_Filtered.bam
 mv \$output* \$featureCounts_path " >Sbatch_featurecounts_${sample}_XenofilteR_Human.script
