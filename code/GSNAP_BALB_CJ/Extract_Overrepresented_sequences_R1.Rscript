@@ -1,0 +1,380 @@
+library(dplyr)
+library(magrittr)
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Bone10_QC/')
+fastqc <- 'Sample_Bone10_13_S5_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Bone10',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Bone10_13_S5_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Bone11_QC/')
+fastqc <- 'Sample_Bone11_14_S9_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Bone11',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Bone11_14_S9_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Bone12_QC/')
+fastqc <- 'Sample_Bone12_15_S3_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Bone12',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Bone12_15_S3_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Bone2_QC/')
+fastqc <- 'Sample_Bone2_6_S3_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Bone2',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Bone2_6_S3_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Bone3_QC/')
+fastqc <- 'Sample_Bone3_7_S3_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Bone3',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Bone3_7_S3_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Bone4_QC/')
+fastqc <- 'Sample_Bone4_8_S6_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Bone4',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Bone4_8_S6_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Bone5_QC/')
+fastqc <- 'Sample_Bone5_9_S8_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Bone5',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Bone5_9_S8_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Bone6_QC/')
+fastqc <- 'Sample_Bone6_10_S4_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Bone6',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Bone6_10_S4_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Bone7_QC/')
+fastqc <- 'Sample_Bone7_11_S7_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Bone7',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Bone7_11_S7_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Bone9_QC/')
+fastqc <- 'Sample_Bone9_12_S2_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Bone9',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Bone9_12_S2_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Clone1N_QC/')
+fastqc <- 'Sample_Clone1N_16_S6_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Clone1N',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Clone1N_16_S6_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Clone1o_QC/')
+fastqc <- 'Sample_Clone1o_19_S7_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Clone1o',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Clone1o_19_S7_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Clone2N_QC/')
+fastqc <- 'Sample_Clone2N_17_S1_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Clone2N',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Clone2N_17_S1_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Clone2o_QC/')
+fastqc <- 'Sample_Clone2o_20_S6_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Clone2o',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Clone2o_20_S6_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Clone3N_QC/')
+fastqc <- 'Sample_Clone3N_18_S4_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Clone3N',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Clone3N_18_S4_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Clone3o_QC/')
+fastqc <- 'Sample_Clone3o_21_S9_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Clone3o',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Clone3o_21_S9_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_liver2_QC/')
+fastqc <- 'Sample_liver2_1_S1_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_liver2',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_liver2_1_S1_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_liver4_QC/')
+fastqc <- 'Sample_liver4_2_S2_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_liver4',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_liver4_2_S2_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_liver5_QC/')
+fastqc <- 'Sample_liver5_3_S5_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_liver5',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_liver5_3_S5_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_liver6_QC/')
+fastqc <- 'Sample_liver6_4_S2_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_liver6',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_liver6_4_S2_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_liver9_QC/')
+fastqc <- 'Sample_liver9_5_S5_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_liver9',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_liver9_5_S5_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Scr1N_QC/')
+fastqc <- 'Sample_Scr1N_22_S8_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Scr1N',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Scr1N_22_S8_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Scr1o_QC/')
+fastqc <- 'Sample_Scr1o_25_S9_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Scr1o',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Scr1o_25_S9_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Scr2N_QC/')
+fastqc <- 'Sample_Scr2N_23_S4_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Scr2N',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Scr2N_23_S4_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Scr2o_QC/')
+fastqc <- 'Sample_Scr2o_26_S8_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Scr2o',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Scr2o_26_S8_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Scr3N_QC/')
+fastqc <- 'Sample_Scr3N_24_S7_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Scr3N',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Scr3N_24_S7_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Scr3o_QC/')
+fastqc <- 'Sample_Scr3o_27_S1_R1_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Scr3o',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Scr3o_27_S1_R1_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Bone10_QC/')
+fastqc <- 'Sample_Bone10_13_S5_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Bone10',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Bone10_13_S5_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Bone11_QC/')
+fastqc <- 'Sample_Bone11_14_S9_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Bone11',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Bone11_14_S9_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Bone12_QC/')
+fastqc <- 'Sample_Bone12_15_S3_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Bone12',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Bone12_15_S3_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Bone2_QC/')
+fastqc <- 'Sample_Bone2_6_S3_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Bone2',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Bone2_6_S3_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Bone3_QC/')
+fastqc <- 'Sample_Bone3_7_S3_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Bone3',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Bone3_7_S3_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Bone4_QC/')
+fastqc <- 'Sample_Bone4_8_S6_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Bone4',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Bone4_8_S6_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Bone5_QC/')
+fastqc <- 'Sample_Bone5_9_S8_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Bone5',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Bone5_9_S8_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Bone6_QC/')
+fastqc <- 'Sample_Bone6_10_S4_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Bone6',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Bone6_10_S4_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Bone7_QC/')
+fastqc <- 'Sample_Bone7_11_S7_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Bone7',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Bone7_11_S7_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Bone9_QC/')
+fastqc <- 'Sample_Bone9_12_S2_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Bone9',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Bone9_12_S2_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Clone1N_QC/')
+fastqc <- 'Sample_Clone1N_16_S6_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Clone1N',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Clone1N_16_S6_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Clone1o_QC/')
+fastqc <- 'Sample_Clone1o_19_S7_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Clone1o',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Clone1o_19_S7_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Clone2N_QC/')
+fastqc <- 'Sample_Clone2N_17_S1_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Clone2N',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Clone2N_17_S1_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Clone2o_QC/')
+fastqc <- 'Sample_Clone2o_20_S6_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Clone2o',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Clone2o_20_S6_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Clone3N_QC/')
+fastqc <- 'Sample_Clone3N_18_S4_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Clone3N',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Clone3N_18_S4_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Clone3o_QC/')
+fastqc <- 'Sample_Clone3o_21_S9_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Clone3o',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Clone3o_21_S9_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_liver2_QC/')
+fastqc <- 'Sample_liver2_1_S1_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_liver2',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_liver2_1_S1_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_liver4_QC/')
+fastqc <- 'Sample_liver4_2_S2_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_liver4',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_liver4_2_S2_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_liver5_QC/')
+fastqc <- 'Sample_liver5_3_S5_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_liver5',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_liver5_3_S5_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_liver6_QC/')
+fastqc <- 'Sample_liver6_4_S2_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_liver6',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_liver6_4_S2_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_liver9_QC/')
+fastqc <- 'Sample_liver9_5_S5_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_liver9',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_liver9_5_S5_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Scr1N_QC/')
+fastqc <- 'Sample_ScR2N_22_S8_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Scr1N',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_ScR2N_22_S8_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Scr1o_QC/')
+fastqc <- 'Sample_ScR2o_25_S9_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Scr1o',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_ScR2o_25_S9_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Scr2N_QC/')
+fastqc <- 'Sample_Scr2N_23_S4_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Scr2N',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Scr2N_23_S4_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Scr2o_QC/')
+fastqc <- 'Sample_Scr2o_26_S8_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Scr2o',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Scr2o_26_S8_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Scr3N_QC/')
+fastqc <- 'Sample_Scr3N_24_S7_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Scr3N',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Scr3N_24_S7_R2_001-paired_fastqc.fa')
+
+setwd('~/SMS_4882_19/nobackup/private/UserDirectories/project_template/intermediate/FastQC_Trimmed/Sample_Scr3o_QC/')
+fastqc <- 'Sample_Scr3o_27_S1_R2_001-paired_fastqc/fastqc_data.txt' 
+fastqcr::qc_read(fastqc)$overrepresented_sequences %>%
+     dplyr::mutate(name=paste('>',1:n(),'-',Count,'-','Sample_Scr3o',sep=''),fa=paste(name,Sequence,sep='\n')) %>%
+     dplyr::pull(fa) %>% 
+     readr::write_lines('overrepresented_Sample_Scr3o_27_S1_R2_001-paired_fastqc.fa')

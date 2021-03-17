@@ -1,0 +1,17 @@
+Sample_Bone11	Sample_Bone11_14_S9_R1_001-paired.fq.gz	Sample_Bone11_14_S9_R2_001-paired.fq.gz
+Sample_Bone12	Sample_Bone12_15_S3_R1_001-paired.fq.gz	Sample_Bone12_15_S3_R2_001-paired.fq.gz
+Sample_Bone4	Sample_Bone4_8_S6_R1_001-paired.fq.gz	Sample_Bone4_8_S6_R2_001-paired.fq.gz
+Sample_Bone7	Sample_Bone7_11_S7_R1_001-paired.fq.gz	Sample_Bone7_11_S7_R2_001-paired.fq.gz
+Sample_Bone9	Sample_Bone9_12_S2_R1_001-paired.fq.gz	Sample_Bone9_12_S2_R2_001-paired.fq.gz
+Sample_Clone2o	Sample_Clone2o_20_S6_R1_001-paired.fq.gz	Sample_Clone2o_20_S6_R2_001-paired.fq.gz
+Sample_Clone3N	Sample_Clone3N_18_S4_R1_001-paired.fq.gz	Sample_Clone3N_18_S4_R2_001-paired.fq.gz
+Sample_Clone3o	Sample_Clone3o_21_S9_R1_001-paired.fq.gz	Sample_Clone3o_21_S9_R2_001-paired.fq.gz
+Sample_liver4	Sample_liver4_2_S2_R1_001-paired.fq.gz	Sample_liver4_2_S2_R2_001-paired.fq.gz
+Sample_liver5	Sample_liver5_3_S5_R1_001-paired.fq.gz	Sample_liver5_3_S5_R2_001-paired.fq.gz
+Sample_liver9	Sample_liver9_5_S5_R1_001-paired.fq.gz	Sample_liver9_5_S5_R2_001-paired.fq.gz
+Sample_Scr2N	Sample_Scr2N_23_S4_R1_001-paired.fq.gz	Sample_Scr2N_23_S4_R2_001-paired.fq.gz
+Sample_Scr2o	Sample_Scr2o_26_S8_R1_001-paired.fq.gz	Sample_Scr2o_26_S8_R2_001-paired.fq.gz
+Sample_Scr3N	Sample_Scr3N_24_S7_R1_001-paired.fq.gz	Sample_Scr3N_24_S7_R2_001-paired.fq.gz
+Sample_Scr3o	Sample_Scr3o_27_S1_R1_001-paired.fq.gz	Sample_Scr3o_27_S1_R2_001-paired.fq.gz
+Sample_Clone2N	Sample_Clone2N_17_S1_R1_001-paired.fq.gz	Sample_Clone2N_17_S1_R2_001-paired.fq.gz
+Sample_liver9	Sample_liver9_5_S5_R1_001-paired.fq.gz	Sample_liver9_5_S5_R2_001-paired.fq.gz

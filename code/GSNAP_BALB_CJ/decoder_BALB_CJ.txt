@@ -1,0 +1,16 @@
+unique.ID	lane.ID	group.ID	sample.ID	qc.data.dir	input.read.pair.count	multi.mapped.read.pair.count
+Sample_Bone11	1	Bone	Sample_Bone11	/crex/proj/snic2020-16-70/nobackup/private/tmp_4882/intermediate/GSNAP_BALB_CJ_QC/Sample_Bone11	30679328	976507
+Sample_Bone12	1	Bone	Sample_Bone12	/crex/proj/snic2020-16-70/nobackup/private/tmp_4882/intermediate/GSNAP_BALB_CJ_QC/Sample_Bone12	2964729	323745
+Sample_Bone4	1	Bone	Sample_Bone4	/crex/proj/snic2020-16-70/nobackup/private/tmp_4882/intermediate/GSNAP_BALB_CJ_QC/Sample_Bone4	114288409	18386706
+Sample_Bone7	1	Bone	Sample_Bone7	/crex/proj/snic2020-16-70/nobackup/private/tmp_4882/intermediate/GSNAP_BALB_CJ_QC/Sample_Bone7	285727	14214
+Sample_Bone9	1	Bone	Sample_Bone9	/crex/proj/snic2020-16-70/nobackup/private/tmp_4882/intermediate/GSNAP_BALB_CJ_QC/Sample_Bone9	68759705	20016935
+Sample_Clone2o	1	Clon	Sample_Clone2o	/crex/proj/snic2020-16-70/nobackup/private/tmp_4882/intermediate/GSNAP_BALB_CJ_QC/Sample_Clone2o	24010973	7191116
+Sample_Clone3N	1	Clon	Sample_Clone3N	/crex/proj/snic2020-16-70/nobackup/private/tmp_4882/intermediate/GSNAP_BALB_CJ_QC/Sample_Clone3N	86240586	24349302
+Sample_Clone3o	1	Clon	Sample_Clone3o	/crex/proj/snic2020-16-70/nobackup/private/tmp_4882/intermediate/GSNAP_BALB_CJ_QC/Sample_Clone3o	52782879	11071841
+Sample_liver4	1	live	Sample_liver4	/crex/proj/snic2020-16-70/nobackup/private/tmp_4882/intermediate/GSNAP_BALB_CJ_QC/Sample_liver4	174706116	50698713
+Sample_liver5	1	live	Sample_liver5	/crex/proj/snic2020-16-70/nobackup/private/tmp_4882/intermediate/GSNAP_BALB_CJ_QC/Sample_liver5	168737023	43624281
+Sample_liver9	1	live	Sample_liver9	/crex/proj/snic2020-16-70/nobackup/private/tmp_4882/intermediate/GSNAP_BALB_CJ_QC/Sample_liver9	169191541	40353642
+Sample_Scr2N	1	Scr	Sample_Scr2N	/crex/proj/snic2020-16-70/nobackup/private/tmp_4882/intermediate/GSNAP_BALB_CJ_QC/Sample_Scr2N	105549812	23357430
+Sample_Scr2o	1	Scr	Sample_Scr2o	/crex/proj/snic2020-16-70/nobackup/private/tmp_4882/intermediate/GSNAP_BALB_CJ_QC/Sample_Scr2o	99680597	26752080
+Sample_Scr3N	1	Scr	Sample_Scr3N	/crex/proj/snic2020-16-70/nobackup/private/tmp_4882/intermediate/GSNAP_BALB_CJ_QC/Sample_Scr3N	106441140	24485807
+Sample_Scr3o	1	Scr	Sample_Scr3o	/crex/proj/snic2020-16-70/nobackup/private/tmp_4882/intermediate/GSNAP_BALB_CJ_QC/Sample_Scr3o	137020018	33181345
