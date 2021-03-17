@@ -1,0 +1,34 @@
+# General files
+.DS_Store
+.Rhistory
+*.un*
+
+# Project-specific files and directories
+.snakemake/
+*-env/
+
+# Partially ignored directories
+**/data/*
+**/results/*
+
+reports/*
+reports/knitr-pdf/*
+
+**/scratch/*
+
+# Exceptions
+!*/README.md
+!*/*/README.md
+
+!data/test_data/
+!data/data_management/
+
+!doc/
+
+!reports/myunsrt.bst
+!reports/references.bib
+!reports/*/
+!reports/*/*.Rnw
+!reports/*/*.pdf
+
+!scratch/README.md
