@@ -226,12 +226,12 @@ kable(all_samples, booktabs = T, caption = 'Summary of sequencing data; Number o
 
 ## QC 
 ### FastQC
-The QC results is available in
+The QC results is available in  
 _/crex/proj/snic2019-30-25/private/UserDirectories/SMS_4882_19_Prostate_Bulk_RNA_Seq/results/00-QC/_  
 By MultiQC we summarized all the fastqc results. The duplication rate is high in the raw reads (Figure \@ref(fig:multiqc-duplicate)).  Also, GC content seems to be shifted and a bit noisy (Figure \@ref(fig:multiqc-gc-content)). These figures together with other statistics are available in multiqc report saved under QC folder.
 ```{r multiqc-duplicate, out.width = "85%", fig.align="center", fig.cap = "Fraction of duplicate reads.", echo = F, crop = F}
 
-include_graphics("../../results/00-QC/FastQC_Trimmed/fastqc_sequence_counts_plot.png")
+include_graphics("../../results/00-QC//FastQC_Trimmed/fastqc_sequence_counts_plot.png")
 ```
 
 
@@ -239,6 +239,7 @@ include_graphics("../../results/00-QC/FastQC_Trimmed/fastqc_sequence_counts_plot
 
 include_graphics("../../results/00-QC/FastQC_Trimmed/fastqc_per_sequence_gc_content_plot.png")
 ```
+\newpage
 ### rRNA contamination
 We checked the data for presence of rRNA in the data by bbduk. All the rRNA sequences of both genomes were extracted from the annotation files. The contamination level was very low (0-0.07%). The results are available in   
 _/crex/proj/snic2019-30-25/private/UserDirectories/SMS_4882_19_Prostate_Bulk_RNA_Seq/results/00-QC/_
@@ -332,7 +333,6 @@ https://github.com/NBISweden/SMS_4882_19_Prostate_Bulk_RNA_Seq
 Scripts are under _code_ directory:  
 GSNA_BALB_CJ/generate-commands.sh for alignment of reads on BALB_CJ genome.  
 GSNA_Human/generate-commands.sh for alignment of reads on human genome  
-
 
 \newpage
 
